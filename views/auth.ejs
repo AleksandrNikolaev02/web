@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=data %></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Авторизация</h1>
+
+    <form action="/userauth" method="post" enctype="multipart/form-data">
+        <h3></h3>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+        <h3></h3>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="submit" value="Войти" />
+    </form>
+    <h3 style="color: red;"> <%=data %> </h3>
+    <a href="/signup">Регистрация</a>
+</body>
+<html>

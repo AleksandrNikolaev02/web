@@ -1,0 +1,17 @@
+{
+    "name": "nodejs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "author": "Nikolaev",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express-fileupload": "^1.4.0",
+        "file-type": "^18.0.0"
+    },
+    "type": "commonjs"
+}

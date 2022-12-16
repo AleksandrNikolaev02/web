@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Все работы</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/style.css" >
+
+</head>
+<body>
+    <h1>Список всех работ</h1>
+        <% for(var i=0; i < data.length; i++) { %>
+            <iframe class="box" height="500px" width="500px" src=<%= data[i] %>></iframe></br>
+            <h3></h3>
+            <table>
+                <% for(var j=0; j < comment.length; j++) { %>
+                  <% if(data[i] === comment[j].link) { %>
+                    <% if(comment[j].grade != null && comment[j].comment != null) { %>
+                   <tr>
+                     <td>Оценка: <%= comment[j].grade %>, </td>
+                     <td>Комментарий: <%= comment[j].comment %></td>
+                   </tr>
+                   <% } %>
+                   <% if(comment[j].grade == null || comment[j].comment == null) {%>
+                    <tr>
+                      <td>Комментариев нет</td>
+                    </tr>
+                  <% } %> 
+                  <% } %>
+                <% } %>
+                </table>
+              <h3></h3>
+         <% } %>
+  <div>
+
+  </div>
+</body>
+<html>
